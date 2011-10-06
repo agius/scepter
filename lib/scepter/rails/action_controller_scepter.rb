@@ -13,8 +13,9 @@ module Scepter
       # Overrides the rescue_action method in ActionController::Base, but does not inhibit
       # any custom processing that is defined with Rails 2's exception helpers.
       def rescue_action_in_public_with_scepter(exception)
-        Scepter.handle(exception)
-        rescue_action_in_public_without_scepter(exception, scepter_request_data)
+        $stderr.puts "Handling exception with scepter"
+        Scepter.handle(exception, scepter_request_data)
+        rescue_action_in_public_without_scepter(exception)
       end
       
       def scepter_request_data
@@ -22,7 +23,7 @@ module Scepter
           :session_data     => session.respond_to?(:to_hash) ? session.to_hash : session.data,
           :controller       => params[:controller],
           :action           => params[:action],
-          :url              => url = "#{request.protocol}#{request.host}:#{request.port}#{request.fullpath}"
+          :url              => url = "#{request.protocol}#{request.host}:#{request.port}#{request.fullpath}",
           :cgi_data         => request.env }
       end
     end
