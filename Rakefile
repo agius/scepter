@@ -17,9 +17,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "scepter"
   gem.homepage = "http://github.com/agius/scepter"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "andy@heyzap.com"
+  gem.summary = %Q{Gem for catching, storing, and notifying you about exceptions. In development, not ready for use.}
+  gem.description = %Q{Gem for catching, storing, and notifying you about exceptions. In development, not ready for use.}
+  gem.email = "andrew@atevans.com"
   gem.authors = ["Andrew Evans"]
   # dependencies defined in Gemfile
 end
