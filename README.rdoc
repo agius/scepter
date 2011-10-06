@@ -1,6 +1,6 @@
 = scepter
 
-Description goes here.
+Gem for catching, storing and notifying you about Ruby exceptions. Not ready for any use yet - still in early development.
 
 == Contributing to scepter
  
@@ -14,6 +14,7 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 Andrew Evans. See LICENSE.txt for
-further details.
+Copyright (c) 2011 Andrew Evans. See LICENSE.txt for further details.
+
+Inspired by [Airbrake](https://github.com/thoughtbot/airbrake)
 
